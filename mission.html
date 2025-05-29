@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" type="text/css">
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li><p><a id="x-button" href="#" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+<path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path>
+</svg></a></p></li>
+                <li><a href="mission.html"><strong>Our Mission</strong></a></li>
+                <li><a href="whoweare.html">Who We Are</a></li>
+                <li><a href="getinvolved.html">Get Involved</a></li>
+                <li><a href="#">Donate</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html"><img src="Common Goal Logo.png" id=logo></a></li>
+                <li><a href="mission.html" class="hideOnMobile"><strong>Our Mission</strong></a></li>
+                <li><a href="whoweare.html" class="hideOnMobile">Who We Are</a></li>
+                <li><a href="getinvolved.html" class="hideOnMobile">Get Involved</a></li>
+                <li><a href="#" class="hideOnMobile">Donate</a></li>
+                <li class="menu-button"><a href="#" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+<path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"></path>
+</svg></a></li>
+            </ul>
+        </nav>
+        <div class="mission-content">
+            <h1>Our Mission</h1>
+            <div class="mission-text">
+                <p>We support young refugees in our community who have a passion to play soccer. By working together, we create inclusive, competitive, team experiences that foster cross-cultural friendships and provide pathways for healthy social, emotional, and physical development. </p>
+                <br>
+                <h3><strong>We all win.</strong></h3>
+                <br>
+                <p>The world's most loved sport has the power to help our new neighbors find community, build responsibility, and gain confidence. Yet they face many barriers and are often left out.</p>
+                <br>
+                <p>With a focus on middle school and high school age soccer enthusiasts, we provide logistical and financial support needed in order for them to participate in soccer programs, including club and school teams, camps, and tournaments. We partner with local groups and individuals to bring these opportunities to life.</p>
+                <br>
+                <p>The broader Missoula community is enriched by the participation of new arrivals, through our differences and what we share in common. Through soccer, we are building connections, reciprocal friendships, and broadening understanding and appreciation of the world outside of Montana.</p>
+            </div>
+            <div class="photo-gallery">
+                <img src="media/kalen-emsley-uSFOwYo1qEw-unsplash.jpg">
+                <img src="media/kalen-emsley-uSFOwYo1qEw-unsplash.jpg">
+                <img src="media/kalen-emsley-uSFOwYo1qEw-unsplash.jpg">
+            </div>
+            <div class="footer">
+                <div class="footer-content">
+                    <p>Common Goal</p>
+                    <p>Contact us at: <a href="mailto:notanemail@email.com">notanemail@email.com</a></p>
+                    <p>(XXX) XXX-XXXX</p>
+                    <p>123 Main St. Missoula, MT 59801</p>
+                </div>
+                <p>Updated: May 29 2025</p>
+            </div>
+        </div>
+        <script>
+            function showSidebar()  {
+                const scrollPosition = window.scrollY;
+                event.preventDefault();
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+                window.scrollTo(0, scrollPosition);
+            }
+            function hideSidebar()  {
+                const scrollPosition = window.scrollY;
+                event.preventDefault();
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+                window.scrollTo(0, scrollPosition);
+            }
+        </script>
+    </body>
+</html>

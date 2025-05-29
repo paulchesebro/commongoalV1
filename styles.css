@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+nav li:first-child a:hover{
+    background-color: white;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.619);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 13px;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.sidebar a:hover{
+    font-weight: bold;
+}
+.sidebar a:first-child:hover{
+    background-color: transparent;
+}
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+    #x-button svg{
+        position: fixed;
+        left: 255px;
+        top: 25px;
+    }
+}
+
+.front-page-content{
+    margin-top: 50px;
+}
+.front-page-image{
+    margin-top: 68px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 250px 30px;
+    background-image: url('media/domenico-loia-hGV2TfOh0ns-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.front-page-image-text{
+    border: 2px solid black;
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.632);
+    backdrop-filter: blur(10px);
+}
+#donate-button{
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+#donate-button:hover{
+    background-color: darkorange;
+}
+.box-div{
+    border: 2px black solid;
+    padding: 15px;
+    margin: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+.box-div h2{
+    margin-top: 5px;
+}
+.learn-more{
+    text-decoration: underline;
+    color: black;
+    font-weight: 600;
+}
+.learn-more:hover{
+    color: darkblue;
+
+}
+.front-page-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer{
+    border-top: 1px solid black;
+    padding: 8px;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mission-content{
+    margin-top: 50px;
+    background-image: url('media/bailey-zindel-NRQV-hBF10M-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.mission-content h1{
+    text-align: center;
+    padding: 30px 20px 10px 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.mission-text{
+    margin: 40px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.561);
+    backdrop-filter: blur(10px);
+}
+.photo-gallery img{
+    max-width: 30%;
+    max-height: auto;
+    padding: 10px;
+}
+.photo-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-color: rgb(255, 255, 255);
+}
+@media(max-width: 800px){
+    .photo-gallery img{
+        max-width: 100%;
+        padding: 10px 0px;
+    }
+}
+
+nav ul li a img{
+    width: 100px;
+    height:auto;
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 999;
+}
+.who-we-are-content{
+margin-top: 70px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.buttons a{
+    padding: 10px;
+    border: 2px solid black;
+    transition: background-color 0.2s ease;
+}
+.buttons a:hover{
+    background-color: lightgrey;
+}
+.buttons .left{
+    background-color: black;
+    color: white;
+}
+
+.who-we-are-box{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+.who-we-are-box h2{
+    padding-bottom: 5px;
+    text-align: center;
+
+}
+.who-we-are-box img{
+    width: 90%;
+}
+.who-we-are-box p{
+    padding-top: 5px;
+}
+#people{
+    display: none;
+}
+.mission-text img{
+    width: 90%;
+    padding: 8px;
+}
+.get-involved-content{
+    margin-top: 50px;
+    background-image: url('media/fruit-basket-8uDropEfy48-unsplash.jpg');
+    background-size: cover;
+}
+.get-involved-content h2{
+    text-align: center;
+    padding: 30px 7px 0px;
+    font-size: 34px;
+}
