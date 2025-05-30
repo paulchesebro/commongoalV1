@@ -91,7 +91,7 @@ nav li:first-child a:hover{
     }
     #x-button svg{
         position: fixed;
-        left: 255px;
+        left: 87%;
         top: 25px;
     }
 }
